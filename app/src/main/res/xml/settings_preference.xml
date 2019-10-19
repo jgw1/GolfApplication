@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.preference.PreferenceCategory>
+        <androidx.preference.Preference
+            android:title="개인정보"
+            app:iconSpaceReserved="false"
+            android:singleLineTitle="true"
+            
+            />
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory>
+        <androidx.preference.Preference
+            android:title="알림설정"
+            app:iconSpaceReserved="false"
+            android:singleLineTitle="true"
+            />
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory>
+        <androidx.preference.Preference
+            android:title="문의하기"
+            app:iconSpaceReserved="false"
+            android:singleLineTitle="true"
+            />
+    </androidx.preference.PreferenceCategory>
+</androidx.preference.PreferenceScreen>

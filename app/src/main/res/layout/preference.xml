@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:iconSpaceReserved="false"
+    android:layout_height="match_parent" android:layout_width="match_parent">
+
+    <PreferenceCategory
+        android:title="Functions"
+        android:iconSpaceReserved="false">
+
+        <CheckBoxPreference
+            android:key="key_add_shortcut"
+            android:title="Add shortcuts"
+            android:icon="@mipmap/ic_launcher"
+            android:defaultValue="true"/>
+
+        <SwitchPreference
+            android:key="key_switch_on"
+            android:title="Screen on"
+            android:icon="@mipmap/ic_launcher"
+            android:defaultValue="false"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Options"
+        android:iconSpaceReserved="false">
+
+        <EditTextPreference
+            android:key="key_edit_name"
+            android:title="Edit name"
+            android:summary="Edit your name"
+            android:dialogTitle="Edit your name"
+            android:iconSpaceReserved="false"/>
+
+
+        <PreferenceScreen
+            android:title="Go to android.com"
+            android:summary="browse android.com"
+            android:iconSpaceReserved="false">
+            <intent android:action="android.intent.action.VIEW"
+                android:data="http://www.android.com" />
+        </PreferenceScreen>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
